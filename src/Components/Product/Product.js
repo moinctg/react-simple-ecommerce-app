@@ -5,15 +5,17 @@ import './Product.css'
 const Product = (props) => {
     console.log(props.product)
 
-    const {name,img,catagory,price,stock,shoping} = props.product;
+    const {name,img,catagory,price,stock,shoping,seller} = props.product;
     return (
-        <div>
-            <h3>this product section</h3>
-            <img src={img} alt=""/>
-    {/* <h3>Image: {img}</h3> */}
-    <h3>name: {name}</h3>
-    <h3>Price: {price}</h3>
-    <h3>Stock: {stock}</h3>
+        <div className="products">
+    <div> <img src={img} alt=""/></div>
+  <div>
+    <h3 className="product-name"> {name}</h3>
+    <p> Price: {price} </p>
+     <p> <small>By: {seller} </small></p>
+     <p> <small>Stock: {stock} </small></p>  
+     </div>
+   
         </div>
     );
 };
