@@ -3,10 +3,29 @@
     display: flex;
     border-bottom: 1px solid lightgray;
     border-right: 5px;
+    padding: 30px;
 
 }
 .product-name{
 
     color: blue;
     font-weight: 400;
+}
+.protucs-item{
+    margin-left: 15px;
+    text-align: left;
+    padding: 15px;
+}
+
+.btn-regular{
+
+
+    background-color:goldenrod;
+    width: 150px;
+    height: 28px;
+    border: 1px solid gray;
+    color:black;
+    border-radius: 10px;
+    cursor: pointer;
+
 }
