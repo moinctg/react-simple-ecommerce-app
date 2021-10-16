@@ -6,6 +6,8 @@ import Shop from './Components/Shop/Shop';
 import Review from './Components/Order/Review';
 import Inventory from './Components/Inventory/Inventory';
 import NotFound from './Components/NotFound/NotFound';
+import Register from './Components/Register/Register';
+import Login from './Components/Login/Login';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +33,14 @@ function App() {
           </Route>
           <Route exact path="/inventory">
             <Inventory></Inventory>
+          </Route>
+          
+          <Route  path="/register">
+            <Register></Register>
+          </Route>
+          
+          <Route path="/login">
+            <Login></Login>
           </Route>
           
           <Route  path="*">
